@@ -1,0 +1,24 @@
+{
+  "name": "@vapaaradikaali/ip-to-country",
+  "version": "0.0.1",
+  "description": "IP to country converter",
+  "main": "ip-to-country",
+  "scripts": {
+    "ip": "node ip-to-country",
+    "update": "node update-geoip"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrenalin/ip-to-country.git"
+  },
+  "author": "Arttu Manninen <arttu@kaktus.cc>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrenalin/ip-to-country/issues"
+  },
+  "homepage": "https://github.com/adrenalin/ip-to-country#readme",
+  "dependencies": {
+    "argparse": "^2.0.1",
+    "geoip-country": "^4.1.59"
+  }
+}

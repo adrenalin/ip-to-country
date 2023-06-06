@@ -1,0 +1,17 @@
+#!/usr/bin/node
+const { ArgumentParser } = require('argparse')
+const { version } = require('./package.json')
+const geoip = require('geoip-country')
+
+const parser = new ArgumentParser({
+  description: 'IP to country'
+})
+
+parser.add_argument('-v', '--version', { action: 'version', version })
+parser.add_argument('ip', { help: 'IP address' })
+
+const args = parser.parse_args()
+const ip = args.ip
+
+const geo = geoip.lookup(ip)
+console.log(geo.country.toLowerCase())
