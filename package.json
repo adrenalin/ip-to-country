@@ -13,6 +13,7 @@
   },
   "author": "Arttu Manninen <arttu@kaktus.cc>",
   "license": "ISC",
+  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/adrenalin/ip-to-country/issues"
   },
